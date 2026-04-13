@@ -18,6 +18,7 @@ pipeline {
 }
 
 post {
+        //what's up my friend, this is the post section, it will run after the stages are completed, regardless of the build result
         always {
             echo 'Cleaning up workspace'
             deleteDir() // Clean up the workspace after the build
